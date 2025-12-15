@@ -1,0 +1,8 @@
+{
+  "syntactic_correctness": 1.0,
+  "semantic_correctness": 0.6630434782608695,
+  "execution_success": 0.6630434782608695,
+  "mathematical_accuracy": 0.1956521739130435,
+  "optimization_formulation": 1.0,
+  "code_extraction_success": 1.0
+}

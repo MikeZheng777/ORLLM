@@ -1,0 +1,632 @@
+[
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nAn environmental organization is planning to invest in two projects: Project X which involves tree planting, and Project Y which focuses on waste management. The investment in each project must be a whole number due to the indivisible nature of resources. The total combined investment for both projects cannot exceed 20 units due to budget limitations. Additionally, the overall environmental impact score, calculated as twice the investment in Project X plus the investment in Project Y, should be at least 10 points to meet their objectives.\\n\\nEach unit of investment in Projects X and Y has an associated cost of 4 and 5 units respectively, and the organization aims to minimize this total cost while meeting all constraints.\\n\\nGiven these conditions, what is the minimum total cost required for this scenario? Please provide your answer rounded to the nearest whole number."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 20.0"
+      }
+    ],
+    "task_id": 135,
+    "ground_truth": 20.0,
+    "dataset": "mamo_easy",
+    "description": "An environmental organization is planning to invest in two projects: Project X which involves tree planting, and Project Y which focuses on waste management. The investment in each project must be a whole number due to the indivisible nature of resources. The total combined investment for both projects cannot exceed 20 units due to budget limitations. Additionally, the overall environmental impact score, calculated as twice the investment in Project X plus the investment in Project Y, should be at least 10 points to meet their objectives.\\n\\nEach unit of investment in Projects X and Y has an associated cost of 4 and 5 units respectively, and the organization aims to minimize this total cost while meeting all constraints.\\n\\nGiven these conditions, what is the minimum total cost required for this scenario? Please provide your answer rounded to the nearest whole number.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nA transportation company is planning to distribute resources between two types of vehicles: type $X$ and type $Y$. The total number of vehicles that can be used cannot exceed 50 due to logistical constraints. To meet the transportation demand, the combined capacity of these vehicles, calculated as 3 times the capacity for vehicle type X plus 2 times the capacity for vehicle type Y, must be at least 100 units. Each unit of vehicle type X and Y requires 2 and 3 fuel units respectively, and the company aims to minimize the total fuel consumption while meeting all constraints and ensuring that the number of vehicles for both X and Y are integers. Calculate the minimum total fuel consumption required for this operation, rounded to the nearest whole number."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 68.0"
+      }
+    ],
+    "task_id": 30,
+    "ground_truth": 68.0,
+    "dataset": "mamo_easy",
+    "description": "A transportation company is planning to distribute resources between two types of vehicles: type $X$ and type $Y$. The total number of vehicles that can be used cannot exceed 50 due to logistical constraints. To meet the transportation demand, the combined capacity of these vehicles, calculated as 3 times the capacity for vehicle type X plus 2 times the capacity for vehicle type Y, must be at least 100 units. Each unit of vehicle type X and Y requires 2 and 3 fuel units respectively, and the company aims to minimize the total fuel consumption while meeting all constraints and ensuring that the number of vehicles for both X and Y are integers. Calculate the minimum total fuel consumption required for this operation, rounded to the nearest whole number.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nA manufacturing company is planning to allocate resources across four different production lines: $x1$, $x2$, $x3$, and $x4$. These lines could represent different products or services that the company offers. The total allocation for production lines $x1$ and $x2$ cannot exceed 5000 units due to capacity constraints, while the total allocation for lines $x3$ and $x4$ is limited to 2000 units. In addition, the combined output of twice as much from line $x1$ and four times from line $x2$ must not be less than the output from line $x3$. Moreover, the combined output of line $x2$ and three times from line x4 minus that of line x1 should be at least 100 units.\\n\\nEach unit produced in production lines costs differently: 50 units for line $x1$, 60 units for line x2, 30 units for line x3, and 20 units for line x4. The company aims to minimize the total cost while meeting all these constraints. Also note that because each unit represents a complete product or service offering, it is not possible to produce fractional units (i.e., all allocations must be whole numbers).\\n\\nGiven these conditions, find the minimum total cost required rounded to nearest whole number."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 680.0"
+      }
+    ],
+    "task_id": 339,
+    "ground_truth": 680.0,
+    "dataset": "mamo_easy",
+    "description": "A manufacturing company is planning to allocate resources across four different production lines: $x1$, $x2$, $x3$, and $x4$. These lines could represent different products or services that the company offers. The total allocation for production lines $x1$ and $x2$ cannot exceed 5000 units due to capacity constraints, while the total allocation for lines $x3$ and $x4$ is limited to 2000 units. In addition, the combined output of twice as much from line $x1$ and four times from line $x2$ must not be less than the output from line $x3$. Moreover, the combined output of line $x2$ and three times from line x4 minus that of line x1 should be at least 100 units.\\n\\nEach unit produced in production lines costs differently: 50 units for line $x1$, 60 units for line x2, 30 units for line x3, and 20 units for line x4. The company aims to minimize the total cost while meeting all these constraints. Also note that because each unit represents a complete product or service offering, it is not possible to produce fractional units (i.e., all allocations must be whole numbers).\\n\\nGiven these conditions, find the minimum total cost required rounded to nearest whole number.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nAn environmental agency is planning to allocate funds across three projects: $X, Y$, and $Z$. These projects could represent initiatives in recycling, renewable energy development, and pollution control, respectively. The total investment across all three projects cannot exceed 1000 units due to budget constraints. Moreover, the allocation for project $X$ minus twice the allocation for project $Y$, plus the allocation for project $Z$ must be at least 200 units, reflecting specific strategic objectives or regulatory requirements. Additionally, twice the allocation for project $X$ plus the allocation for project $Y$, minus the allocation for project $Z$ should not exceed 500 units, ensuring balanced resource distribution.\\n\\nEach unit of investment in projects $X, Y$, and $Z$ incurs different costs which are quantified as 50 , 30 , and 20 units respectively. The agency aims to minimize the total cost while adhering to these constraints and ensuring that all investments are integers due to administrative considerations.\\n\\nWhat is the minimum total cost required for this scenario (in arbitrary monetary units), rounded to the nearest whole number?"
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 4000.0"
+      }
+    ],
+    "task_id": 302,
+    "ground_truth": 4000.0,
+    "dataset": "mamo_easy",
+    "description": "An environmental agency is planning to allocate funds across three projects: $X, Y$, and $Z$. These projects could represent initiatives in recycling, renewable energy development, and pollution control, respectively. The total investment across all three projects cannot exceed 1000 units due to budget constraints. Moreover, the allocation for project $X$ minus twice the allocation for project $Y$, plus the allocation for project $Z$ must be at least 200 units, reflecting specific strategic objectives or regulatory requirements. Additionally, twice the allocation for project $X$ plus the allocation for project $Y$, minus the allocation for project $Z$ should not exceed 500 units, ensuring balanced resource distribution.\\n\\nEach unit of investment in projects $X, Y$, and $Z$ incurs different costs which are quantified as 50 , 30 , and 20 units respectively. The agency aims to minimize the total cost while adhering to these constraints and ensuring that all investments are integers due to administrative considerations.\\n\\nWhat is the minimum total cost required for this scenario (in arbitrary monetary units), rounded to the nearest whole number?",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nA sports coach is planning the weekly training schedule for three different types of training: strength (X), endurance (Y), and agility (Z). The fatigue levels associated with each hour of training are 6, 3, and 5 respectively. The coach has the following constraints on the training hours:- The combined hours of strength and endurance must be at least 8 to meet basic fitness requirements.- The sum of strength and agility cannot exceed 10 hours to avoid overexertion.- The difference between endurance and agility should be at least 2 hours to maintain a balanced program.\\n\\nAll training sessions have to be whole numbers due to scheduling practicalities. Given these conditions, what is the minimum total fatigue level for the team, given the optimal allocation of weekly training hours among strength, endurance, and agility? Provide your answer rounded to the nearest whole number."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 24.0"
+      }
+    ],
+    "task_id": 277,
+    "ground_truth": 24.0,
+    "dataset": "mamo_easy",
+    "description": "A sports coach is planning the weekly training schedule for three different types of training: strength (X), endurance (Y), and agility (Z). The fatigue levels associated with each hour of training are 6, 3, and 5 respectively. The coach has the following constraints on the training hours:- The combined hours of strength and endurance must be at least 8 to meet basic fitness requirements.- The sum of strength and agility cannot exceed 10 hours to avoid overexertion.- The difference between endurance and agility should be at least 2 hours to maintain a balanced program.\\n\\nAll training sessions have to be whole numbers due to scheduling practicalities. Given these conditions, what is the minimum total fatigue level for the team, given the optimal allocation of weekly training hours among strength, endurance, and agility? Provide your answer rounded to the nearest whole number.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nA marketing manager is planning to allocate a budget across three different marketing channels, X, Y, and Z. The total investment in channel X and channel Y should not exceed $1000, while the combined investment for channels Y and Z should not be more than $800. Moreover, the combined investment for channels X and Z must be at least $500. Each dollar invested in these channels yields different returns on investment (ROI) - 2 units of ROI for every dollar spent on channel X, 3 units of ROI per dollar on channel Y, and 5 units of ROI per dollar on channel Z. If the objective is to minimize the total cost while ensuring all investments are in whole numbers due to budgeting constraints: What is the minimum total cost needed to meet all these conditions? Please provide your answer rounded to the nearest whole number."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 500.0"
+      }
+    ],
+    "task_id": 171,
+    "ground_truth": 500.0,
+    "dataset": "mamo_easy",
+    "description": "A marketing manager is planning to allocate a budget across three different marketing channels, X, Y, and Z. The total investment in channel X and channel Y should not exceed $1000, while the combined investment for channels Y and Z should not be more than $800. Moreover, the combined investment for channels X and Z must be at least $500. Each dollar invested in these channels yields different returns on investment (ROI) - 2 units of ROI for every dollar spent on channel X, 3 units of ROI per dollar on channel Y, and 5 units of ROI per dollar on channel Z. If the objective is to minimize the total cost while ensuring all investments are in whole numbers due to budgeting constraints: What is the minimum total cost needed to meet all these conditions? Please provide your answer rounded to the nearest whole number.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nAn educational institute is planning to distribute a budget between two programs, $X$ and $Y$. The total budget for both programs combined is constrained to a maximum of 40 units. The minimum allocation for program $X$ is 15 units and for program $Y$, it is 10 units. Also, the maximum possible allocation for program $X$ cannot exceed 30 units due to logistical constraints, similarly, for program $Y$, it cannot exceed 20 units. The cost per unit of effectiveness (which the institution aims to minimize) for program $X$ is 10 units and for program $Y$ it's 5 units. The distribution needs to be done in whole numbers due to the nature of resources involved. Find the minimum total cost if we are distributing resources optimally between both programs, rounded off to nearest whole number."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 200.0"
+      }
+    ],
+    "task_id": 122,
+    "ground_truth": 200.0,
+    "dataset": "mamo_easy",
+    "description": "An educational institute is planning to distribute a budget between two programs, $X$ and $Y$. The total budget for both programs combined is constrained to a maximum of 40 units. The minimum allocation for program $X$ is 15 units and for program $Y$, it is 10 units. Also, the maximum possible allocation for program $X$ cannot exceed 30 units due to logistical constraints, similarly, for program $Y$, it cannot exceed 20 units. The cost per unit of effectiveness (which the institution aims to minimize) for program $X$ is 10 units and for program $Y$ it's 5 units. The distribution needs to be done in whole numbers due to the nature of resources involved. Find the minimum total cost if we are distributing resources optimally between both programs, rounded off to nearest whole number.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nA sports team is planning the allocation of weekly training hours for two different types of activities: $X$ represents strength conditioning and $Y$ represents skill development. The total combined hours of both activities cannot exceed 15 due to logistical constraints. Strength conditioning requires a minimum commitment of 5 hours per week to be effective, while skill development requires at least 3 hours per week. Each hour spent on strength conditioning contributes 20 units towards overall team fatigue, while each hour spent on skill development contributes 30 units.\\n\\nGiven that the objective is to minimize overall team fatigue while adhering to these time constraints (with allocations being in whole numbers due to scheduling practicalities), what is the minimum possible total fatigue score for the team, given an optimal allocation of training hours? Please round your answer to the nearest whole number."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 190.0"
+      }
+    ],
+    "task_id": 105,
+    "ground_truth": 190.0,
+    "dataset": "mamo_easy",
+    "description": "A sports team is planning the allocation of weekly training hours for two different types of activities: $X$ represents strength conditioning and $Y$ represents skill development. The total combined hours of both activities cannot exceed 15 due to logistical constraints. Strength conditioning requires a minimum commitment of 5 hours per week to be effective, while skill development requires at least 3 hours per week. Each hour spent on strength conditioning contributes 20 units towards overall team fatigue, while each hour spent on skill development contributes 30 units.\\n\\nGiven that the objective is to minimize overall team fatigue while adhering to these time constraints (with allocations being in whole numbers due to scheduling practicalities), what is the minimum possible total fatigue score for the team, given an optimal allocation of training hours? Please round your answer to the nearest whole number.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nA manufacturing company is planning to allocate resources to three different projects: X1, X2, and X3. These projects could involve upgrading machinery, expanding production lines, and implementing new technologies, respectively. The objective is to minimize the total cost associated with these projects, with costs being \\$50 per unit for project X1, \\$75 per unit for project X2 and \\$120 per unit for project X3.\\n\\nThe allocation must adhere to the following constraints due to budgetary limitations:\\n- The combined resource allocation for all three projects cannot exceed 500 units.\\n- The collective effectiveness of five times the resource allocated to project X1 plus ten times that allocated to project X2 must be at least 1000 units.\\n- The difference between twice and a half of the resource allocated for project X3 and that allocated for project X1 should not exceed 300 units.\\n\\nGiven the constraints and the objective function, along with the requirement that the allocations for all projects must be whole numbers due to indivisible nature of resources involved in each task. Each project also has specific bounds on resource allocation:\\nWhat is the minimum total cost for this manufacturing company when they distribute their resources optimally among these three projects within specified bounds? Please provide your answer rounded up to nearest dollar."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 7500.0"
+      }
+    ],
+    "task_id": 513,
+    "ground_truth": 7500.0,
+    "dataset": "mamo_easy",
+    "description": "A manufacturing company is planning to allocate resources to three different projects: X1, X2, and X3. These projects could involve upgrading machinery, expanding production lines, and implementing new technologies, respectively. The objective is to minimize the total cost associated with these projects, with costs being \\$50 per unit for project X1, \\$75 per unit for project X2 and \\$120 per unit for project X3.\\n\\nThe allocation must adhere to the following constraints due to budgetary limitations:\\n- The combined resource allocation for all three projects cannot exceed 500 units.\\n- The collective effectiveness of five times the resource allocated to project X1 plus ten times that allocated to project X2 must be at least 1000 units.\\n- The difference between twice and a half of the resource allocated for project X3 and that allocated for project X1 should not exceed 300 units.\\n\\nGiven the constraints and the objective function, along with the requirement that the allocations for all projects must be whole numbers due to indivisible nature of resources involved in each task. Each project also has specific bounds on resource allocation:\\nWhat is the minimum total cost for this manufacturing company when they distribute their resources optimally among these three projects within specified bounds? Please provide your answer rounded up to nearest dollar.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nIn a healthcare setting, a hospital administrator needs to allocate staff between two roles: Doctors and Nurses. The staffing allocation must adhere to the following constraints due to various operational requirements:  - Each doctor and nurse can treat a certain number of patients per day, with one doctor able to treat 2 patients and one nurse able to treat 3 patients. To ensure adequate patient care, the total number of patients treated by both doctors and nurses combined must be at least 10.- Due to budget constraints, the total number of staff (doctors + nurses) that can be hired is limited to 12.\\n\\nEach doctor requires an investment of 5 units (e.g., salary, training costs), while each nurse requires an investment of 3 units. The hospital aims to minimize these costs while ensuring all staffing requirements are met.\\n\\nGiven these conditions and considering that staffing levels need to be in whole numbers due to the nature of personnel hiring:What is the minimum total cost for staffing doctors and nurses at this hospital, rounded off to the nearest whole unit?"
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 12.0"
+      }
+    ],
+    "task_id": 42,
+    "ground_truth": 12.0,
+    "dataset": "mamo_easy",
+    "description": "In a healthcare setting, a hospital administrator needs to allocate staff between two roles: Doctors and Nurses. The staffing allocation must adhere to the following constraints due to various operational requirements:  - Each doctor and nurse can treat a certain number of patients per day, with one doctor able to treat 2 patients and one nurse able to treat 3 patients. To ensure adequate patient care, the total number of patients treated by both doctors and nurses combined must be at least 10.- Due to budget constraints, the total number of staff (doctors + nurses) that can be hired is limited to 12.\\n\\nEach doctor requires an investment of 5 units (e.g., salary, training costs), while each nurse requires an investment of 3 units. The hospital aims to minimize these costs while ensuring all staffing requirements are met.\\n\\nGiven these conditions and considering that staffing levels need to be in whole numbers due to the nature of personnel hiring:What is the minimum total cost for staffing doctors and nurses at this hospital, rounded off to the nearest whole unit?",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nIn a finance scenario, an investor is planning to allocate funds between two types of assets: bonds and stocks. The allocations must be in whole numbers due to the nature of these securities. To meet the investment strategy, the combined value of 2 units of bonds and 3 units of stocks should be at least \\$50000. Also, the combined value of 3 units of bonds and 2 units of stocks should not exceed \\$100000 due to risk management considerations. Each unit of bond and stock incurs costs (could represent fees, charges or minimum investments) quantified as \\$7 for bonds and \\$5 for stocks respectively. The investor aims to minimize the total cost while adhering to these constraints. Calculate the minimum total cost required for this investment plan, rounded to the nearest dollar."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 83335.0"
+      }
+    ],
+    "task_id": 37,
+    "ground_truth": 83335.0,
+    "dataset": "mamo_easy",
+    "description": "In a finance scenario, an investor is planning to allocate funds between two types of assets: bonds and stocks. The allocations must be in whole numbers due to the nature of these securities. To meet the investment strategy, the combined value of 2 units of bonds and 3 units of stocks should be at least \\$50000. Also, the combined value of 3 units of bonds and 2 units of stocks should not exceed \\$100000 due to risk management considerations. Each unit of bond and stock incurs costs (could represent fees, charges or minimum investments) quantified as \\$7 for bonds and \\$5 for stocks respectively. The investor aims to minimize the total cost while adhering to these constraints. Calculate the minimum total cost required for this investment plan, rounded to the nearest dollar.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nA sports coach is planning to distribute the training hours between two types of workouts: $X$ and $Y$. Each type of workout must be conducted in full hours, due to scheduling practicalities. The total hours for both workouts combined cannot exceed 40 hours in a week. Workout $X$ requires at least 15 hours a week and workout $Y$ needs at least 10 hours per week to ensure effectiveness. Each hour of workout $X$ costs 2 fatigue points, while each hour of workout $Y$ costs 3 fatigue points. Given these conditions, the coach aims to minimize the total fatigue points while meeting all constraints. What is the minimum total fatigue score possible for this schedule? Please give your answer as an integer."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 60.0"
+      }
+    ],
+    "task_id": 112,
+    "ground_truth": 60.0,
+    "dataset": "mamo_easy",
+    "description": "A sports coach is planning to distribute the training hours between two types of workouts: $X$ and $Y$. Each type of workout must be conducted in full hours, due to scheduling practicalities. The total hours for both workouts combined cannot exceed 40 hours in a week. Workout $X$ requires at least 15 hours a week and workout $Y$ needs at least 10 hours per week to ensure effectiveness. Each hour of workout $X$ costs 2 fatigue points, while each hour of workout $Y$ costs 3 fatigue points. Given these conditions, the coach aims to minimize the total fatigue points while meeting all constraints. What is the minimum total fatigue score possible for this schedule? Please give your answer as an integer.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nA human resources manager is planning the distribution of new hires across three different departments: $X$, $Y$, and $Z$. Each department corresponds to a specific function in the company, such as sales, marketing, or product development. The cost of hiring an employee for each department differs due to varying salary levels, training requirements, and recruitment expenses. Specifically, it costs \\$5000 to hire an employee for department X, \\$6000 for department Y, and \\$7000 for department Z.\\n\\nThe total number of new hires cannot exceed 100 due to budget constraints. Moreover, there are strategic priorities that necessitate certain staffing ratios between the departments:\\n- The number of employees in department X must be at least 10 more than twice the number of employees in department Y.- The number of employees in department Y must be at least 5 more than those in department Z.\\n\\nAdditionally, there are capacity limits on how many new hires each department can accommodate:- Department X can hire up to 50 employees.- Department Y can hire up to 30 employees.- Department Z can hire up to 20 employees.\\n\\nGiven these conditions and aiming for whole numbers of new hires due to practicalities related to individual employment contracts (employees cannot be hired fractionally), what is the minimum total cost required for this hiring plan? Provide your answer rounded to the nearest dollar."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 130000.0"
+      }
+    ],
+    "task_id": 270,
+    "ground_truth": 130000.0,
+    "dataset": "mamo_easy",
+    "description": "A human resources manager is planning the distribution of new hires across three different departments: $X$, $Y$, and $Z$. Each department corresponds to a specific function in the company, such as sales, marketing, or product development. The cost of hiring an employee for each department differs due to varying salary levels, training requirements, and recruitment expenses. Specifically, it costs \\$5000 to hire an employee for department X, \\$6000 for department Y, and \\$7000 for department Z.\\n\\nThe total number of new hires cannot exceed 100 due to budget constraints. Moreover, there are strategic priorities that necessitate certain staffing ratios between the departments:\\n- The number of employees in department X must be at least 10 more than twice the number of employees in department Y.- The number of employees in department Y must be at least 5 more than those in department Z.\\n\\nAdditionally, there are capacity limits on how many new hires each department can accommodate:- Department X can hire up to 50 employees.- Department Y can hire up to 30 employees.- Department Z can hire up to 20 employees.\\n\\nGiven these conditions and aiming for whole numbers of new hires due to practicalities related to individual employment contracts (employees cannot be hired fractionally), what is the minimum total cost required for this hiring plan? Provide your answer rounded to the nearest dollar.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nA school is planning to optimize its budget allocation for teachers, students, and classrooms. The cost per teacher is \\$5000, the cost per student is \\$3000, and the cost for each classroom is \\$10000. The school has a few constraints: - For every 30 teachers hired, there can be no more than 600 students enrolled due to the student-to-teacher ratio standards.- There should be at least one classroom for every 40 students to accommodate them all comfortably.Furthermore, the school must hire at least 10 teachers and enroll at least 200 students. Also, a minimum of 5 classrooms needs to be maintained in order to function properly.Given these conditions and aiming for whole numbers in hiring teachers and enrolling students due to practicalities as well as having an integral number of classrooms:What would be the minimum total cost for this education scenario in dollars when optimally allocating resources among teachers, students, and classrooms? Provide your answer rounded off to the nearest dollar."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 700000.0"
+      }
+    ],
+    "task_id": 288,
+    "ground_truth": 700000.0,
+    "dataset": "mamo_easy",
+    "description": "A school is planning to optimize its budget allocation for teachers, students, and classrooms. The cost per teacher is \\$5000, the cost per student is \\$3000, and the cost for each classroom is \\$10000. The school has a few constraints: - For every 30 teachers hired, there can be no more than 600 students enrolled due to the student-to-teacher ratio standards.- There should be at least one classroom for every 40 students to accommodate them all comfortably.Furthermore, the school must hire at least 10 teachers and enroll at least 200 students. Also, a minimum of 5 classrooms needs to be maintained in order to function properly.Given these conditions and aiming for whole numbers in hiring teachers and enrolling students due to practicalities as well as having an integral number of classrooms:What would be the minimum total cost for this education scenario in dollars when optimally allocating resources among teachers, students, and classrooms? Provide your answer rounded off to the nearest dollar.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nA construction company is planning to allocate resources across four different projects: Project X1, X2, X3, and X4. The objective is to minimize the total cost associated with these projects, with costs being \\$100, \\$200, \\$150, and \\$50 per unit for project X1, X2, X3 and X4 respectively.\\n\\nThe resource allocation must adhere to the following constraints due to budgetary limitations and project requirements:\\n\\n- The combined resource allocation for project X1 and project X2 cannot exceed 1000 units.\\n- Twice the resources allocated for project X1 combined with those allocated for project X3 should be at least 800 units.\\n- Resources allocated for Project X4 should not be less than half of that allocated to Project X1.\\n- The difference in resources between a quarter of those assigned to Project x3 and all those assigned to Project x2 should not exceed 500 units.\\n- A certain balance between projects must be maintained such that subtracting the allocation for Projects x1 and x3 from the sum of allocations for Projects x2 and x4 results in exactly 70 units.\\n\\nGiven these conditions along with specific upper limits on each project's resource allocation (X1: 500 units; X2: 300 units; x3: 200 units; x4:400units), what is the minimum total cost for this construction company? Assume that all allocations are in whole numbers due to practicality."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 74000.0"
+      }
+    ],
+    "task_id": 616,
+    "ground_truth": 74000.0,
+    "dataset": "mamo_easy",
+    "description": "A construction company is planning to allocate resources across four different projects: Project X1, X2, X3, and X4. The objective is to minimize the total cost associated with these projects, with costs being \\$100, \\$200, \\$150, and \\$50 per unit for project X1, X2, X3 and X4 respectively.\\n\\nThe resource allocation must adhere to the following constraints due to budgetary limitations and project requirements:\\n\\n- The combined resource allocation for project X1 and project X2 cannot exceed 1000 units.\\n- Twice the resources allocated for project X1 combined with those allocated for project X3 should be at least 800 units.\\n- Resources allocated for Project X4 should not be less than half of that allocated to Project X1.\\n- The difference in resources between a quarter of those assigned to Project x3 and all those assigned to Project x2 should not exceed 500 units.\\n- A certain balance between projects must be maintained such that subtracting the allocation for Projects x1 and x3 from the sum of allocations for Projects x2 and x4 results in exactly 70 units.\\n\\nGiven these conditions along with specific upper limits on each project's resource allocation (X1: 500 units; X2: 300 units; x3: 200 units; x4:400units), what is the minimum total cost for this construction company? Assume that all allocations are in whole numbers due to practicality.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nA transportation company is planning to distribute its fleet of vehicles between two major routes, X and Y. The total number of vehicles that can be assigned to both routes combined cannot exceed 1000 due to maintenance constraints. To ensure adequate service levels, a minimum of 400 vehicles must be allocated to route X, and at least 300 vehicles must be allocated to route Y. Each vehicle operating on route X costs the company $50 per day in fuel and maintenance expenses, while each vehicle on route Y costs $60 per day. Given these conditions and aiming for whole numbers of vehicles (since partial allocation is not feasible), what would be the minimum daily cost for the company given an optimal distribution of the fleet? Provide your answer rounded to the nearest dollar."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 38000.0"
+      }
+    ],
+    "task_id": 32,
+    "ground_truth": 38000.0,
+    "dataset": "mamo_easy",
+    "description": "A transportation company is planning to distribute its fleet of vehicles between two major routes, X and Y. The total number of vehicles that can be assigned to both routes combined cannot exceed 1000 due to maintenance constraints. To ensure adequate service levels, a minimum of 400 vehicles must be allocated to route X, and at least 300 vehicles must be allocated to route Y. Each vehicle operating on route X costs the company $50 per day in fuel and maintenance expenses, while each vehicle on route Y costs $60 per day. Given these conditions and aiming for whole numbers of vehicles (since partial allocation is not feasible), what would be the minimum daily cost for the company given an optimal distribution of the fleet? Provide your answer rounded to the nearest dollar.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nA construction manager is planning the allocation of resources across three types of tasks: $X, Y$, and $Z$. These tasks could represent different phases in a construction project such as foundation laying (task X), structure building (task Y), and interior finishing (task Z). The total number of man-hours allocated across all three tasks cannot exceed 50 due to labor constraints. In order to ensure the quality and timely completion of the project, it is necessary that the combined effort calculated as thrice the man-hours for task X plus four times the man-hours for task Y plus single man-hour for task Z must be at least 100. Additionally, another measure computed as twice the man-hours for task X minus those for task Y plus those for task Z should not exceed 75. Each hour of work on tasks $X, Y$, and $Z$ incurs costs of $100 , 200 , and 150 units respectively. The company aims to minimize these costs while adhering to all project constraints and ensuring that all allocations are whole numbers due to practicality in scheduling manpower. Calculate the minimum total cost required for this scenario, rounded to the nearest dollar."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 3400.0"
+      }
+    ],
+    "task_id": 243,
+    "ground_truth": 3400.0,
+    "dataset": "mamo_easy",
+    "description": "A construction manager is planning the allocation of resources across three types of tasks: $X, Y$, and $Z$. These tasks could represent different phases in a construction project such as foundation laying (task X), structure building (task Y), and interior finishing (task Z). The total number of man-hours allocated across all three tasks cannot exceed 50 due to labor constraints. In order to ensure the quality and timely completion of the project, it is necessary that the combined effort calculated as thrice the man-hours for task X plus four times the man-hours for task Y plus single man-hour for task Z must be at least 100. Additionally, another measure computed as twice the man-hours for task X minus those for task Y plus those for task Z should not exceed 75. Each hour of work on tasks $X, Y$, and $Z$ incurs costs of $100 , 200 , and 150 units respectively. The company aims to minimize these costs while adhering to all project constraints and ensuring that all allocations are whole numbers due to practicality in scheduling manpower. Calculate the minimum total cost required for this scenario, rounded to the nearest dollar.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nA manufacturing company produces products using three main materials: steel, wood, and plastic. The costs associated with each unit of these materials are $10 for steel, $15 for wood, and $20 for plastic. Due to certain production requirements and constraints on material availability, the following conditions must be met:\\n\\n- The quantity of twice the steel plus wood should be at least 1000 units.\\n- The combined quantity of steel and plastic cannot exceed 2000 units.\\n- The difference in quantities between wood and plastic should be no less than 500 units.\\n- The total quantity across all three materials must equal exactly 3500 units.\\n\\nMoreover, the quantities of steel, wood, and plastic used need to be whole numbers due to the nature of these resources. Given these parameters:\\n\\nWhat is the minimum total cost in dollars that can be achieved while adhering to all constraints? Please provide your answer rounded to the nearest dollar."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 42500.0"
+      }
+    ],
+    "task_id": 510,
+    "ground_truth": 42500.0,
+    "dataset": "mamo_easy",
+    "description": "A manufacturing company produces products using three main materials: steel, wood, and plastic. The costs associated with each unit of these materials are $10 for steel, $15 for wood, and $20 for plastic. Due to certain production requirements and constraints on material availability, the following conditions must be met:\\n\\n- The quantity of twice the steel plus wood should be at least 1000 units.\\n- The combined quantity of steel and plastic cannot exceed 2000 units.\\n- The difference in quantities between wood and plastic should be no less than 500 units.\\n- The total quantity across all three materials must equal exactly 3500 units.\\n\\nMoreover, the quantities of steel, wood, and plastic used need to be whole numbers due to the nature of these resources. Given these parameters:\\n\\nWhat is the minimum total cost in dollars that can be achieved while adhering to all constraints? Please provide your answer rounded to the nearest dollar.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nIn a sports tournament, a coach is planning the allocation of players between three teams: X, Y, and Z. The total number of players that can be allocated is limited to 50 due to logistical constraints. To ensure a balanced team structure, the combined number of players in team Y and team Z must be at least 30. Additionally, the combined number of players in team X and team Z should not exceed 40 to maintain balance among the teams.\\n\\nThe performance score associated with each player for teams X, Y and Z are given as 3 points, 4 points and 2 points respectively. These scores represent their contributions to their respective teams' performances. Given these conditions and considering that only whole numbers of players can be assigned to each team (since partial assignment of a player is not possible), what is the minimum total performance score achievable for this sports tournament? Provide your answer rounded to the nearest whole number."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 60.0"
+      }
+    ],
+    "task_id": 272,
+    "ground_truth": 60.0,
+    "dataset": "mamo_easy",
+    "description": "In a sports tournament, a coach is planning the allocation of players between three teams: X, Y, and Z. The total number of players that can be allocated is limited to 50 due to logistical constraints. To ensure a balanced team structure, the combined number of players in team Y and team Z must be at least 30. Additionally, the combined number of players in team X and team Z should not exceed 40 to maintain balance among the teams.\\n\\nThe performance score associated with each player for teams X, Y and Z are given as 3 points, 4 points and 2 points respectively. These scores represent their contributions to their respective teams' performances. Given these conditions and considering that only whole numbers of players can be assigned to each team (since partial assignment of a player is not possible), what is the minimum total performance score achievable for this sports tournament? Provide your answer rounded to the nearest whole number.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nA construction manager is planning the allocation of resources across three different projects: X, Y, and Z. These could represent different types of infrastructure such as roads, bridges, or buildings. The total resources that can be allocated to all three projects combined cannot exceed 100 units due to budget constraints. Each project has specific requirements: the combined resource allocation for twice Project X and Project Y must be at least 30 units to ensure their viability; similarly, the sum of resources allocated to Projects X and Z must be at least 40 units.\\n\\nThe cost associated with each unit of resource varies among projects: it's \\$1000 for Project X, \\$2000 for Project Y, and \\$3000 for Project Z. The manager aims to minimize the total cost while adhering to these constraints.\\n\\nIn addition, due to practical limitations on manpower and materials availability, there are bounds on how much can be allocated to each project: between 0 (inclusive) and 50 (inclusive) units for Project X; between 0 (inclusive) and 60 (inclusive) units for Project Y; between 0 (inclusive) and 70 (inclusive) units for Project Z.\\n\\nGiven these conditions with all allocations being whole numbers due to indivisible nature of resources, what is the minimum total cost required in dollars? Provide your answer rounded to the nearest dollar."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 40000.0"
+      }
+    ],
+    "task_id": 542,
+    "ground_truth": 40000.0,
+    "dataset": "mamo_easy",
+    "description": "A construction manager is planning the allocation of resources across three different projects: X, Y, and Z. These could represent different types of infrastructure such as roads, bridges, or buildings. The total resources that can be allocated to all three projects combined cannot exceed 100 units due to budget constraints. Each project has specific requirements: the combined resource allocation for twice Project X and Project Y must be at least 30 units to ensure their viability; similarly, the sum of resources allocated to Projects X and Z must be at least 40 units.\\n\\nThe cost associated with each unit of resource varies among projects: it's \\$1000 for Project X, \\$2000 for Project Y, and \\$3000 for Project Z. The manager aims to minimize the total cost while adhering to these constraints.\\n\\nIn addition, due to practical limitations on manpower and materials availability, there are bounds on how much can be allocated to each project: between 0 (inclusive) and 50 (inclusive) units for Project X; between 0 (inclusive) and 60 (inclusive) units for Project Y; between 0 (inclusive) and 70 (inclusive) units for Project Z.\\n\\nGiven these conditions with all allocations being whole numbers due to indivisible nature of resources, what is the minimum total cost required in dollars? Provide your answer rounded to the nearest dollar.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nA transportation company is planning to allocate its fleet of vehicles across four different routes: x1, x2, x3, and x4. The objective is to minimize the total operating cost associated with these routes, with costs being 10, 9, 11, and 12 units for each vehicle on routes x1, x2, x3, and x4 respectively.\\n\\nThe allocation must adhere to the following constraints due to traffic regulations and demand requirements:- The combined number of vehicles on routes x1 and x2 cannot exceed 500.- The combined number of vehicles on routes x3 and x4 cannot exceed 400.- To ensure sufficient coverage of all areas serviced by the company, at least 300 vehicles should be allocated between routes x1 and x3.- Similarly, at least 600 vehicles should be allocated between routes x2 and x4.\\n\\nGiven these constraints and considering that the number of vehicles assigned to each route must be a whole number (due to the indivisible nature of the resources), along with specific bounds on vehicle allocation for each route:What is the minimum total operating cost for the company in terms of cost units if optimal allocation strategy is followed? Provide your answer rounded to the nearest whole unit."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 9000.0"
+      }
+    ],
+    "task_id": 342,
+    "ground_truth": 9000.0,
+    "dataset": "mamo_easy",
+    "description": "A transportation company is planning to allocate its fleet of vehicles across four different routes: x1, x2, x3, and x4. The objective is to minimize the total operating cost associated with these routes, with costs being 10, 9, 11, and 12 units for each vehicle on routes x1, x2, x3, and x4 respectively.\\n\\nThe allocation must adhere to the following constraints due to traffic regulations and demand requirements:- The combined number of vehicles on routes x1 and x2 cannot exceed 500.- The combined number of vehicles on routes x3 and x4 cannot exceed 400.- To ensure sufficient coverage of all areas serviced by the company, at least 300 vehicles should be allocated between routes x1 and x3.- Similarly, at least 600 vehicles should be allocated between routes x2 and x4.\\n\\nGiven these constraints and considering that the number of vehicles assigned to each route must be a whole number (due to the indivisible nature of the resources), along with specific bounds on vehicle allocation for each route:What is the minimum total operating cost for the company in terms of cost units if optimal allocation strategy is followed? Provide your answer rounded to the nearest whole unit.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nAn energy company is planning to expand its renewable energy portfolio by investing in solar and wind power projects. Each project represents an individual unit of solar or wind power generation capacity that can be developed. The company aims to minimize the total investment cost, with each solar project costing 7 units and each wind project costing 5 units.\\n\\nHowever, there are certain constraints that must be met due to regulatory requirements and technical feasibility:- To ensure a balanced mix of energy sources, the combined capacity from two units of solar power and three units of wind power must be at least 10.- On the other hand, due to limitations in grid capacity or other infrastructure considerations, the total capacity from four units of solar power and one unit of wind power cannot exceed 15.\\n\\nGiven these conditions, along with the requirement that investments must be made in whole numbers of projects due to practical considerations,What is the minimum total investment cost for the company given optimal allocation between solar and wind projects? Please provide your answer rounded to the nearest whole number."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 20.0"
+      }
+    ],
+    "task_id": 10,
+    "ground_truth": 20.0,
+    "dataset": "mamo_easy",
+    "description": "An energy company is planning to expand its renewable energy portfolio by investing in solar and wind power projects. Each project represents an individual unit of solar or wind power generation capacity that can be developed. The company aims to minimize the total investment cost, with each solar project costing 7 units and each wind project costing 5 units.\\n\\nHowever, there are certain constraints that must be met due to regulatory requirements and technical feasibility:- To ensure a balanced mix of energy sources, the combined capacity from two units of solar power and three units of wind power must be at least 10.- On the other hand, due to limitations in grid capacity or other infrastructure considerations, the total capacity from four units of solar power and one unit of wind power cannot exceed 15.\\n\\nGiven these conditions, along with the requirement that investments must be made in whole numbers of projects due to practical considerations,What is the minimum total investment cost for the company given optimal allocation between solar and wind projects? Please provide your answer rounded to the nearest whole number.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nA transportation manager is planning the optimal allocation of vehicles across three routes: X, Y, and Z. Each route has different costs associated with it due to factors such as distance, tolls, and fuel consumption. The cost per vehicle for routes X, Y, and Z are 2, 3, and 4 units respectively.\\n\\nThe company has the following constraints for their daily operations:\\n\\n- The combined number of vehicles on routes X and Y cannot exceed 100 due to traffic congestion during peak hours.\\n- Similarly, the combined number of vehicles on routes Y and Z is limited to a maximum of 150 due to restrictions on total fleet size.\\n- To ensure adequate coverage across all regions served by the company, the sum of vehicles operating on routes X and Z must be at least 80.\\n\\nGiven these conditions and considering that the allocation must be in whole numbers due to each vehicle being indivisible, what is the minimum total cost for running operations across all three routes (X,Y,Z), given an optimal allocation? Provide your answer rounded to the nearest whole unit."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 160.0"
+      }
+    ],
+    "task_id": 195,
+    "ground_truth": 160.0,
+    "dataset": "mamo_easy",
+    "description": "A transportation manager is planning the optimal allocation of vehicles across three routes: X, Y, and Z. Each route has different costs associated with it due to factors such as distance, tolls, and fuel consumption. The cost per vehicle for routes X, Y, and Z are 2, 3, and 4 units respectively.\\n\\nThe company has the following constraints for their daily operations:\\n\\n- The combined number of vehicles on routes X and Y cannot exceed 100 due to traffic congestion during peak hours.\\n- Similarly, the combined number of vehicles on routes Y and Z is limited to a maximum of 150 due to restrictions on total fleet size.\\n- To ensure adequate coverage across all regions served by the company, the sum of vehicles operating on routes X and Z must be at least 80.\\n\\nGiven these conditions and considering that the allocation must be in whole numbers due to each vehicle being indivisible, what is the minimum total cost for running operations across all three routes (X,Y,Z), given an optimal allocation? Provide your answer rounded to the nearest whole unit.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nAn energy company is planning to allocate resources between two power plants, X and Y. The resource allocation is measured in units and can only be in whole numbers due to the nature of the resources. For each unit of resource allocated, plant X produces 60 units of power while plant Y produces 90 units.\\n\\nThe company has certain constraints for this allocation:\\n- The combined resource allocation for twice that of plant X and thrice that of plant Y cannot exceed 1200 units.\\n- The resource allocation for plant X must not be less than that for plant Y.\\n- Additionally, the total resource allocations for both plants must at least amount to 100 units.\\n\\nGiven these conditions, what is the minimum total power production possible by optimally allocating resources between the two plants? Provide your answer rounded to the nearest whole number."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 6000.0"
+      }
+    ],
+    "task_id": 418,
+    "ground_truth": 6000.0,
+    "dataset": "mamo_easy",
+    "description": "An energy company is planning to allocate resources between two power plants, X and Y. The resource allocation is measured in units and can only be in whole numbers due to the nature of the resources. For each unit of resource allocated, plant X produces 60 units of power while plant Y produces 90 units.\\n\\nThe company has certain constraints for this allocation:\\n- The combined resource allocation for twice that of plant X and thrice that of plant Y cannot exceed 1200 units.\\n- The resource allocation for plant X must not be less than that for plant Y.\\n- Additionally, the total resource allocations for both plants must at least amount to 100 units.\\n\\nGiven these conditions, what is the minimum total power production possible by optimally allocating resources between the two plants? Provide your answer rounded to the nearest whole number.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nA transportation manager is planning to allocate vehicles among three different routes: X, Y, and Z. The objective is to minimize the total operating cost associated with these routes, with costs being $5, $7$, and $3$ per vehicle for routes X, Y, and Z respectively.\\n\\nThe allocation must adhere to the following constraints due to budget limitations and traffic conditions:\\n- The combined number of vehicles on routes X, Y, and Z cannot exceed 1000.\\n- Twice the number of vehicles on route X plus thrice the number of vehicles on route Y should be at least 500. This might be due to heavier traffic or larger distances covered by these routes.\\n- The sum of vehicles on routes X and Z minus those on route Y should not exceed 400. This could be a requirement based on specific demands or road conditions.\\n- The number of vehicles running on route Y should be at least 100 more than those on route Z. This could reflect higher demand or capacity for route Y.\\n\\nGiven these constraints along with the requirement that all allocations must be in whole numbers due to practical reasons (you can't operate a fraction of a vehicle), what is the minimum total operating cost for the transportation manager? Provide your answer rounded to the nearest dollar."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 1167.0"
+      }
+    ],
+    "task_id": 191,
+    "ground_truth": 1167.0,
+    "dataset": "mamo_easy",
+    "description": "A transportation manager is planning to allocate vehicles among three different routes: X, Y, and Z. The objective is to minimize the total operating cost associated with these routes, with costs being $5, $7$, and $3$ per vehicle for routes X, Y, and Z respectively.\\n\\nThe allocation must adhere to the following constraints due to budget limitations and traffic conditions:\\n- The combined number of vehicles on routes X, Y, and Z cannot exceed 1000.\\n- Twice the number of vehicles on route X plus thrice the number of vehicles on route Y should be at least 500. This might be due to heavier traffic or larger distances covered by these routes.\\n- The sum of vehicles on routes X and Z minus those on route Y should not exceed 400. This could be a requirement based on specific demands or road conditions.\\n- The number of vehicles running on route Y should be at least 100 more than those on route Z. This could reflect higher demand or capacity for route Y.\\n\\nGiven these constraints along with the requirement that all allocations must be in whole numbers due to practical reasons (you can't operate a fraction of a vehicle), what is the minimum total operating cost for the transportation manager? Provide your answer rounded to the nearest dollar.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nA human resources manager is planning to hire new employees in three different departments: department $X$, department $Y$, and department $Z$. The hiring cost for each employee in department $X$ is $\\$5000$, in department $Y$ it is $\\$7000$, and in department $Z$ it is $\\$10000$. Due to budget constraints, the total number of hires across all three departments cannot exceed 50. Furthermore, due to operational requirements, the company needs to hire at least 10 employees for department $X$, at least 15 for department $Y$, and at least 20 for department $Z$. Given these conditions, if the HR manager aims to minimize the total hiring cost while meeting all the constraints (assuming that X, Y, Z are integers representing the number of hires), what would be the minimum total hiring cost? Provide your answer rounded to the nearest dollar."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 355000.0"
+      }
+    ],
+    "task_id": 263,
+    "ground_truth": 355000.0,
+    "dataset": "mamo_easy",
+    "description": "A human resources manager is planning to hire new employees in three different departments: department $X$, department $Y$, and department $Z$. The hiring cost for each employee in department $X$ is $\\$5000$, in department $Y$ it is $\\$7000$, and in department $Z$ it is $\\$10000$. Due to budget constraints, the total number of hires across all three departments cannot exceed 50. Furthermore, due to operational requirements, the company needs to hire at least 10 employees for department $X$, at least 15 for department $Y$, and at least 20 for department $Z$. Given these conditions, if the HR manager aims to minimize the total hiring cost while meeting all the constraints (assuming that X, Y, Z are integers representing the number of hires), what would be the minimum total hiring cost? Provide your answer rounded to the nearest dollar.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nA real estate developer is planning to allocate resources across four different projects: $x1$, $x2$, $x3$, and $x4$. These projects could represent investments in residential, commercial, industrial, and infrastructural developments respectively. The objective is to minimize the total cost associated with these projects. The costs per unit of investment for the projects $x1$, $x2$, $x3$ and $x4$ are \\$200, \\$300, \\$400 and \\$500 respectively.\\n\\nThe allocation must adhere to the following constraints due to budgetary limitations:\\n- The combined resource allocation for residential and commercial development (projects $x1$ and $x2$) cannot exceed 1000 units.\\n- The allocation for twice the industrial development plus infrastructure development (2*$x3$ + $x4$) cannot exceed 1200 units.\\n- The sum of all allocations ($x1 + x2 + x3 + x4$) should be at least 500 units indicating a minimum level of overall activity.\\n\\nGiven that each project has specific bounds on resource allocation due to various factors such as regulatory requirements or market conditions:\\nWhat is the minimum total cost for the company, given an optimal allocation of resources within these bounds? Note that all allocations are whole numbers due to indivisibility in real-world resources. Please provide your answer rounded to the nearest dollar."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 100000.0"
+      }
+    ],
+    "task_id": 412,
+    "ground_truth": 100000.0,
+    "dataset": "mamo_easy",
+    "description": "A real estate developer is planning to allocate resources across four different projects: $x1$, $x2$, $x3$, and $x4$. These projects could represent investments in residential, commercial, industrial, and infrastructural developments respectively. The objective is to minimize the total cost associated with these projects. The costs per unit of investment for the projects $x1$, $x2$, $x3$ and $x4$ are \\$200, \\$300, \\$400 and \\$500 respectively.\\n\\nThe allocation must adhere to the following constraints due to budgetary limitations:\\n- The combined resource allocation for residential and commercial development (projects $x1$ and $x2$) cannot exceed 1000 units.\\n- The allocation for twice the industrial development plus infrastructure development (2*$x3$ + $x4$) cannot exceed 1200 units.\\n- The sum of all allocations ($x1 + x2 + x3 + x4$) should be at least 500 units indicating a minimum level of overall activity.\\n\\nGiven that each project has specific bounds on resource allocation due to various factors such as regulatory requirements or market conditions:\\nWhat is the minimum total cost for the company, given an optimal allocation of resources within these bounds? Note that all allocations are whole numbers due to indivisibility in real-world resources. Please provide your answer rounded to the nearest dollar.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nA sports coach is planning the training hours for two groups within the team: group X focuses on stamina building and group Y on skill development. The objective is to optimize the team's performance by minimizing the total fatigue score, which is affected by the training intensity and duration for each group. The fatigue scores associated with each hour of training are 2 for group X and 3 for group Y.\\n\\nThe team has the following constraints for their weekly training schedule: - The combined hours of stamina building (group X) and skill development (group Y) cannot exceed 100 hours, considering the available facilities and trainers.- To ensure a balanced training program, the number of stamina building (group X) hours must be at least 10 more than that of skill development (group Y).\\n- Additionally, twice the number of stamina building (group X) hours plus that of skill development (group Y) must be at least 60 to meet minimum fitness standards.\\n\\nGiven these conditions and aiming for whole numbers of training hours due to scheduling practicalities, what is the minimum total fatigue score for the team given an optimal allocation between stamina building (X) and skill development(Y)? Provide your answer rounded to nearest whole number."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 60.0"
+      }
+    ],
+    "task_id": 110,
+    "ground_truth": 60.0,
+    "dataset": "mamo_easy",
+    "description": "A sports coach is planning the training hours for two groups within the team: group X focuses on stamina building and group Y on skill development. The objective is to optimize the team's performance by minimizing the total fatigue score, which is affected by the training intensity and duration for each group. The fatigue scores associated with each hour of training are 2 for group X and 3 for group Y.\\n\\nThe team has the following constraints for their weekly training schedule: - The combined hours of stamina building (group X) and skill development (group Y) cannot exceed 100 hours, considering the available facilities and trainers.- To ensure a balanced training program, the number of stamina building (group X) hours must be at least 10 more than that of skill development (group Y).\\n- Additionally, twice the number of stamina building (group X) hours plus that of skill development (group Y) must be at least 60 to meet minimum fitness standards.\\n\\nGiven these conditions and aiming for whole numbers of training hours due to scheduling practicalities, what is the minimum total fatigue score for the team given an optimal allocation between stamina building (X) and skill development(Y)? Provide your answer rounded to nearest whole number.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nA supply chain manager is trying to optimize the distribution of goods between two warehouses, X and Y. The total amount distributed should not exceed 1000 units due to transportation constraints. To meet demand, the combined number of units, with twice the count from warehouse X and thrice from warehouse Y, should be at least 1500. Furthermore, the difference in units between warehouse X and warehouse Y must not exceed 300 to ensure balanced stock levels.\\n\\nEach unit distributed from warehouse X costs $10 while it costs $15 for each unit from warehouse Y. Given that both warehouses can only deal with whole numbers of units due to packaging limitations and considering that there are specific bounds on how many units each warehouse can handle (warehouse X: maximum 700 units; warehouse Y: maximum 500 units), what is the minimum total cost for optimal distribution across these two warehouses? Please round your answer to the nearest dollar."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 7500.0"
+      }
+    ],
+    "task_id": 464,
+    "ground_truth": 7500.0,
+    "dataset": "mamo_easy",
+    "description": "A supply chain manager is trying to optimize the distribution of goods between two warehouses, X and Y. The total amount distributed should not exceed 1000 units due to transportation constraints. To meet demand, the combined number of units, with twice the count from warehouse X and thrice from warehouse Y, should be at least 1500. Furthermore, the difference in units between warehouse X and warehouse Y must not exceed 300 to ensure balanced stock levels.\\n\\nEach unit distributed from warehouse X costs $10 while it costs $15 for each unit from warehouse Y. Given that both warehouses can only deal with whole numbers of units due to packaging limitations and considering that there are specific bounds on how many units each warehouse can handle (warehouse X: maximum 700 units; warehouse Y: maximum 500 units), what is the minimum total cost for optimal distribution across these two warehouses? Please round your answer to the nearest dollar.",
+    "correct_program": null
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are an expert in mathematical optimization and operations research. You help solve complex optimization problems by providing clear, correct Python code using optimization libraries like Gurobi, OR-Tools, or SciPy."
+      },
+      {
+        "role": "user",
+        "content": "Please solve this optimization problem:\n\nA tourism company is planning to organize tours for two different types of groups, $X$ and $Y$. The total number of groups that can be accommodated in a week is limited to 20 due to logistical constraints. To ensure a diverse offering, the combined number of twice the groups of type $X$ and groups of type $Y$ must be at least 10. Furthermore, the difference between the numbers of group $X$ and group $Y$ should not exceed 5 to maintain balance in their operations.\\n\\nEach tour for group type $X$ costs \\$100 while each tour for group type $Y$ costs \\$50. The company aims to minimize the total cost while adhering to these constraints and ensuring that the number of tours for both types are integers.\\n\\nThe maximum limit on tours for group X is 15 and for Y is 10 per week due to operational limitations.\\n\\nGiven these conditions, what is the minimum total cost required for organizing these tours in a week? Provide your answer rounded to nearest dollar."
+      },
+      {
+        "role": "assistant",
+        "content": "The optimal value is: 500.0"
+      }
+    ],
+    "task_id": 117,
+    "ground_truth": 500.0,
+    "dataset": "mamo_easy",
+    "description": "A tourism company is planning to organize tours for two different types of groups, $X$ and $Y$. The total number of groups that can be accommodated in a week is limited to 20 due to logistical constraints. To ensure a diverse offering, the combined number of twice the groups of type $X$ and groups of type $Y$ must be at least 10. Furthermore, the difference between the numbers of group $X$ and group $Y$ should not exceed 5 to maintain balance in their operations.\\n\\nEach tour for group type $X$ costs \\$100 while each tour for group type $Y$ costs \\$50. The company aims to minimize the total cost while adhering to these constraints and ensuring that the number of tours for both types are integers.\\n\\nThe maximum limit on tours for group X is 15 and for Y is 10 per week due to operational limitations.\\n\\nGiven these conditions, what is the minimum total cost required for organizing these tours in a week? Provide your answer rounded to nearest dollar.",
+    "correct_program": null
+  }
+]

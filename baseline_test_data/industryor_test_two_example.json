@@ -1,0 +1,46 @@
+[
+  {
+    "task_id": "B088",
+    "description": "A company produces product A and product B. Each unit of product A sold generates a profit of £30, while each unit of product B sold generates a profit of £10. The company can allocate a maximum of 40 hours per week for production. Producing one unit of product A requires 6 hours, while producing one unit of product B requires 3 hours. Market demand requires that the quantity of product B produced must be at least three times the quantity of product A. The storage space occupied by product A is four times that of product B, and a maximum of four units of product A can be stored per week.\n\nFormulate a model for this problem.",
+    "ground_truth": 150.0,
+    "formulation": null,
+    "correct_program": "def optimize_production(profit_A=30,\n                        profit_B=10,\n                        hours_per_A=6,\n                        hours_per_B=3,\n                        max_hours=40,\n                        min_B_ratio=3,\n                        max_A_storage=4):\n    import gurobipy as gp\n    from gurobipy import GRB\n\n    # Create a new model\n    model = gp.Model(\"Production_Optimization\")\n\n    # Decision variables: number of units of A and B\n    x_A = model.addVar(vtype=GRB.INTEGER, name=\"x_A\", lb=0)\n    x_B = model.addVar(vtype=GRB.INTEGER, name=\"x_B\", lb=0)\n\n    # Set objective: maximize profit\n    model.setObjective(profit_A * x_A + profit_B * x_B, GRB.MAXIMIZE)\n\n    # Add constraints\n    # Production time constraint\n    model.addConstr(hours_per_A * x_A + hours_per_B * x_B <= max_hours,\n                    \"TimeLimit\")\n    # Market demand constraint for B\n    model.addConstr(x_B >= min_B_ratio * x_A, \"DemandB\")\n    # Storage space constraint for A\n    model.addConstr(x_A <= max_A_storage, \"StorageA\")\n\n    # Optimize the model\n    model.optimize()\n\n    # Check if a feasible solution was found\n    if model.status == GRB.OPTIMAL:\n        return model.objVal\n    else:\n        return None\nif __name__ == \"__main__\":  # pragma: no cover\n    result = optimize_production()\n    if result is not None:\n        print(f\"Optimal profit: {result}\")\n    else:\n        print(\"No feasible solution found.\")",
+    "output_status": [],
+    "success_count": 0,
+    "success_confidence": 0,
+    "fail_to_diagnose": 0,
+    "fail_to_verify": 0,
+    "retrieved_insights": [],
+    "tag": [
+      {
+        "problem_domain": "Production Planning",
+        "modeling_type": "IP",
+        "industry_sector": "Manufacturing",
+        "reason": "The problem involves determining optimal production quantities for two products to maximize profit under resource, demand, and storage constraints, which is a classic production planning scenario. The decision variables are integers (number of units), and the objective and constraints are linear, making it an Integer Program."
+      }
+    ],
+    "cluster": null
+  },
+  {
+    "task_id": "B042",
+    "description": "A production base needs to extract raw materials from warehouses A and B every day for production. The required raw materials are: at least 240 pieces of raw material A, at least 80 kg of raw material B, and at least 120 tons of raw material C. It is known that: Each truck from warehouse A can transport back to the production base 4 pieces of raw material A, 2 kg of raw material B, 6 tons of raw material C, with a freight cost of 200 yuan per truck; each truck from warehouse B can transport back to the production base 7 pieces of raw material A, 2 kg of raw material B, 2 tons of raw material C per day, with a freight cost of 160 yuan per truck. Question: In order to meet production needs, how many trucks should be dispatched daily from warehouse A and warehouse B to minimize the total freight cost?",
+    "ground_truth": 6800.0,
+    "formulation": null,
+    "correct_program": "def optimize_truck_dispatch(\n        cost_A=200,  # freight cost per truck from warehouse A\n        cost_B=160,  # freight cost per truck from warehouse B\n        min_A=240,  # minimum raw material A pieces\n        min_B=80,  # minimum raw material B kg\n        min_C=120  # minimum raw material C tons\n):\n    import gurobipy as gp\n    from gurobipy import GRB\n\n    # Create a new model\n    model = gp.Model(\"Truck_Dispatch_Optimization\")\n\n    # Decision variables: number of trucks from warehouses A and B\n    x_A = model.addVar(vtype=GRB.INTEGER, lb=0, name=\"x_A\")\n    x_B = model.addVar(vtype=GRB.INTEGER, lb=0, name=\"x_B\")\n\n    # Set objective: minimize total freight cost\n    model.setObjective(cost_A * x_A + cost_B * x_B, GRB.MINIMIZE)\n\n    # Add constraints for raw materials\n    # Raw material A\n    model.addConstr(4 * x_A + 7 * x_B >= min_A, \"Raw_A\")\n    # Raw material B\n    model.addConstr(2 * x_A + 2 * x_B >= min_B, \"Raw_B\")\n    # Raw material C\n    model.addConstr(6 * x_A + 2 * x_B >= min_C, \"Raw_C\")\n\n    # Optimize the model\n    model.optimize()\n\n    # Check if a feasible solution was found\n    if model.status == GRB.OPTIMAL:\n        # Return the optimal total freight cost\n        return model.objVal\n    else:\n        # No feasible solution found\n        return None\nif __name__ == \"__main__\":\n    result = optimize_truck_dispatch()\n    if result is not None:\n        print(f\"Optimal total freight cost: {result}\")\n    else:\n        print(\"No feasible solution found.\")",
+    "output_status": [],
+    "success_count": 0,
+    "success_confidence": 0,
+    "fail_to_diagnose": 0,
+    "fail_to_verify": 0,
+    "retrieved_insights": [],
+    "tag": [
+      {
+        "problem_domain": "Resource Allocation",
+        "modeling_type": "IP",
+        "industry_sector": "Manufacturing",
+        "reason": "The problem involves allocating trucks from different warehouses to meet minimum raw material requirements at a production base while minimizing transportation costs. The decision variables are integers (number of trucks), and the objective and constraints are linear, classifying it as an Integer Program within the manufacturing sector."
+      }
+    ],
+    "cluster": null
+  }
+]

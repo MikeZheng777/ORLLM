@@ -1,0 +1,14 @@
+\ Model DailyFleetAssignment_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ demand_JFK-ORD: 150 x[B737,JFK-ORD] + 180 x[A320,JFK-ORD]
+   + 100 x[RJ,JFK-ORD] = 500
+ arr_slots_ORD_JFK-ORD: x[B737,JFK-ORD] + x[A320,JFK-ORD] + x[RJ,JFK-ORD]
+   <= 3
+Bounds
+ x[A320,JFK-ORD] free
+Generals
+ x[B737,JFK-ORD] x[A320,JFK-ORD] x[RJ,JFK-ORD]
+End
